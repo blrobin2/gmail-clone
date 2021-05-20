@@ -1,0 +1,6 @@
+.env.prod*
+**/__pycache__/
+services/web/project/media/**
+services/web/project/templates
+
+!**/.keep
