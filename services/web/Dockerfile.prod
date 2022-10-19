@@ -2,7 +2,7 @@
 # FLASK BUILDER #
 #################
 
-FROM python:3.9.5-slim-buster as build-flask
+FROM python:3.10.7-slim as build-flask
 
 WORKDIR /usr/src/app
 
@@ -25,7 +25,7 @@ RUN pip wheel --no-cache-dir --no-deps --wheel-dir /usr/src/app/wheels -r requir
 # FINAL #
 #########
 
-FROM python:3.9.5-slim-buster
+FROM python:3.10.7-slim
 
 RUN mkdir -p /home/app
 
